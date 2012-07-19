@@ -1,0 +1,5 @@
+How to use:
+
+  ./ltspice2csv -i INPUT.txt -o OUTPUT.csv
+
+ATM. it doesn't contain an install command.

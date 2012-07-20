@@ -23,3 +23,14 @@ Install:
 Uninstall
 
   make uninstall
+
+PLOT DATA IN MATLAB
+===================
+
+ %% Read and plot csv
+ clc
+ m = csvread('dc.csv', 1, 0);
+ freq = m(:,1);
+ mag = m(:,2);
+ phase = m(:,3);
+ plot (freq,mag,freq,phase)  

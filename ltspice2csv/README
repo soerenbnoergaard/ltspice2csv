@@ -1,5 +1,25 @@
 How to use:
+===========
 
-  ./ltspice2csv -i INPUT.txt -o OUTPUT.csv
+With DC (time, voltage):
 
-ATM. it doesn't contain an install command.
+  ltspice2csv -i INPUT.txt -o OUTPUT.csv
+
+With AC (freq, (mag, phase)):
+
+  ltspice2csv -i INPUT.txt -o OUTPUT.csv -a
+
+INSTALL:
+========
+
+Compile:
+
+  make
+
+Install:
+
+  # make install
+
+Uninstall
+
+  # make uninstall

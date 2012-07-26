@@ -1,6 +1,11 @@
+Input
+=====
+An export file of an LTSpice plot (*.txt). Currently tested with ".tran" and ".ac" - time and frequency resonse plots. 
+
+The export may include several "probes" to be converted.
+
 How to use:
 ===========
-
 With DC (time, voltage):
 
   ltspice2csv -i INPUT.txt -o OUTPUT.csv
@@ -11,7 +16,6 @@ With AC (freq, (mag, phase)):
 
 INSTALL:
 ========
-
 Compile:
 
   make
@@ -27,10 +31,10 @@ Uninstall
 PLOT DATA IN MATLAB
 ===================
 
- %% Read and plot csv
- clc
- m = csvread('dc.csv', 1, 0);
- freq = m(:,1);
- mag = m(:,2);
- phase = m(:,3);
- plot (freq,mag,freq,phase)  
+  %% Read and plot csv
+  clc
+  m = csvread('dc.csv', 1, 0);
+  freq = m(:,1);
+  mag = m(:,2);
+  phase = m(:,3);
+  plot (freq,mag,freq,phase)  

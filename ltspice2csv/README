@@ -28,13 +28,20 @@ Uninstall
 
   make uninstall
 
-PLOT DATA IN MATLAB
-===================
+PLOT DATA IN MATLAB/OCTAVE
+==========================
 
   %% Read and plot csv
   clc
-  m = csvread('dc.csv', 1, 0);
+  m = csvread('ac.csv', 1, 0);
   freq = m(:,1);
   mag = m(:,2);
   phase = m(:,3);
-  plot (freq,mag,freq,phase)  
+  semilogx (freq,mag,freq,phase)  
+  grid on;
+  title('AC Frequency Response');
+  xlabel('Frequency (Hz)');
+  ylabel('Response (dB)');
+  legend('Magnitude', 'Phase');
+  % Optional: Save plot as EPS
+  print -depsc 'ac.eps';

@@ -19,7 +19,7 @@ With AC (freq, (mag, phase)):
   ltspice2csv -i INPUT.txt -o OUTPUT.csv -a
 ```
 
-INSTALL:
+Install:
 --------
 Compile:
 
@@ -39,7 +39,7 @@ Uninstall
   make uninstall
 ```
 
-PLOT DATA IN MATLAB/OCTAVE
+Plot data in Matlab/Octave
 --------------------------
 
 ```octave

@@ -9,35 +9,28 @@ How to use:
 -----------
 With DC (time, voltage):
 
-```
-  ltspice2csv -i INPUT.txt -o OUTPUT.csv
-```
+	ltspice2csv -i INPUT.txt -o OUTPUT.csv
+
 
 With AC (freq, (mag, phase)):
 
-```
-  ltspice2csv -i INPUT.txt -o OUTPUT.csv -a
-```
+	ltspice2csv -i INPUT.txt -o OUTPUT.csv -a
+
 
 Install:
 --------
 Compile:
 
-```
-  make
-```
+	make
+
 
 Install:
 
-```
-  make install
-```
+	make install
 
 Uninstall
 
-```
-  make uninstall
-```
+	make uninstall
 
 Plot data in Matlab/Octave
 --------------------------

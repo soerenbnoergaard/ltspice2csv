@@ -2,7 +2,8 @@
  * @author Søren Nørgaard
  * @date 2012-07-19
  * Strips an export file from LTSpice4 into a regular CSV formatted file.
- * Does: Strip up to 50 signals, Mag and Phase. Counts number of signals. Set a flag -a, to treat as AC, freq, mag, phase.
+ * Does: Strip up to 50 signals, Mag and Phase. Counts number of signals. 
+ *       Set a flag -a, to treat as AC, freq, mag, phase.
  * Does not: 
  */
 #include <stdio.h>
@@ -115,7 +116,8 @@ int main(int argc, char *argv[]) {
       strcpy(volt[i], token);
     }
 
-    /* Part individual signals into mag and phase  - IF AC ONLY. Remove newline for both AC and DC */
+    /* Part individual signals into mag and phase 
+     * - IF AC ONLY. Remove newline for both AC and DC */
     for (i = 0; i < numOfSignals; i++){
       token = strtok(volt[i], "\n");
       if (acFlag) {
